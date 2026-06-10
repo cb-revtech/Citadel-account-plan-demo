@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDN Strategic Account Plan | Citadel Securities</title>
+    <meta
+      name="description"
+      content="Visual DDN strategic account plan for Citadel Securities, June 2026 to June 2027."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand-lockup" href="#top" aria-label="DDN Citadel account plan">
+        <span class="logo-plate">
+          <img class="brand-logo" src="assets/ddn-logo-small.svg" alt="DDN" />
+        </span>
+        <span class="brand-kicker">Citadel Plan</span>
+      </a>
+      <nav class="top-nav" aria-label="Account plan sections">
+        <a href="#thesis">Summary</a>
+        <a href="#plays">Sales Plays</a>
+        <a href="#workloads">Workloads</a>
+        <a href="#opportunities">Pipeline</a>
+        <a href="#messaging">Messaging</a>
+        <a href="#stakeholders">Stakeholders</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#risks">Risks</a>
+        <a href="#kpis">KPIs</a>
+        <a href="#next-steps">Next Steps</a>
+        <a href="#gaps">Data Gaps</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/citadel-data-layer-hero.png"
+          alt="Abstract high-performance trading data infrastructure with market data streams and data center racks"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Citadel Securities · Financial Services · AI + HPC</p>
+          <h1 id="hero-title">
+            Make the data layer strengthen the
+            <span>trading edge.</span>
+          </h1>
+          <p class="hero-copy">
+            Establish DDN as the data infrastructure partner for Citadel Securities'
+            highest-value performance and governance workloads: AI-driven trading
+            research, market data replay, model training, checkpointing, hybrid HPC,
+            and regulatory-grade data retention.
+          </p>
+
+          <div class="hero-grid" aria-label="Account plan highlights">
+            <div class="hero-metric">
+              <span class="metric-label">Plan Period</span>
+              <strong>Jun 2026 - Jun 2027</strong>
+            </div>
+            <div class="hero-metric">
+              <span class="metric-label">Pipeline Goal</span>
+              <strong>$5M-$15M</strong>
+            </div>
+            <div class="hero-metric">
+              <span class="metric-label">Initial Close Target</span>
+              <strong>$3M-$8M</strong>
+            </div>
+            <div class="hero-metric">
+              <span class="metric-label">Active Opportunity</span>
+              <strong>Infinia Q226</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="plan-note">
+        <div>
+          <span class="note-label">Planning Note</span>
+          <p>
+            This plan uses public company signals, inferred workload needs, and the
+            internal Salesforce opportunity "Citadel - Infinia - Q226." Relationship
+            details, vendor footprint, opportunity value, and technical assumptions
+            must be validated by the account team.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-panel" id="thesis">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <div>
+            <p class="eyebrow dark">Executive Summary</p>
+            <h2>Citadel does not buy storage. It buys speed, control, and confidence.</h2>
+          </div>
+        </div>
+
+        <div class="thesis-layout">
+          <div class="thesis-card dark-card">
+            <span class="card-label">Account Thesis</span>
+            <p>
+              DDN helps Citadel Securities protect and extend its trading edge by
+              making the data layer faster, more predictable, more governable, and
+              better aligned to AI-scale research.
+            </p>
+          </div>
+          <div class="thesis-card">
+            <span class="card-label">Strategic Posture</span>
+            <p>
+              DDN is not trying to replace Citadel's engineering sophistication.
+              DDN is trying to amplify it through workload proof, predictable
+              performance, and governed scale.
+            </p>
+          </div>
+        </div>
+
+        <div class="pressure-grid" aria-label="Business pressures and DDN relevance">
+          <article class="pressure-card">
+            <span>01</span>
+            <h3>Faster Research Cycles</h3>
+            <p>
+              Replay markets, test strategies, and validate models faster to convert
+              ideas into trading advantage.
+            </p>
+            <strong>EXAScaler for replay, simulation, metadata-heavy workflows, and checkpointing.</strong>
+          </article>
+          <article class="pressure-card">
+            <span>02</span>
+            <h3>Deterministic Performance</h3>
+            <p>
+              Inconsistent infrastructure performance can distort tests and slow
+              iteration.
+            </p>
+            <strong>Position predictable concurrency, not just raw throughput.</strong>
+          </article>
+          <article class="pressure-card">
+            <span>03</span>
+            <h3>AI Productivity</h3>
+            <p>
+              Expensive compute is only valuable when it is consistently fed with
+              the right data.
+            </p>
+            <strong>Improve training, model loading, checkpointing, and accelerator utilization.</strong>
+          </article>
+          <article class="pressure-card">
+            <span>04</span>
+            <h3>Hybrid HPC Control</h3>
+            <p>
+              Cloud and on-prem infrastructure must work together without runaway
+              data movement or operational drag.
+            </p>
+            <strong>Support hybrid tiers and cloud-adjacent architectures where relevant.</strong>
+          </article>
+          <article class="pressure-card">
+            <span>05</span>
+            <h3>Regulatory Confidence</h3>
+            <p>
+              Internal clearing, market activity, and audit response raise the value
+              of retained, searchable, controlled data.
+            </p>
+            <strong>Infinia for WORM, encryption, policy retention, and audit retrieval.</strong>
+          </article>
+          <article class="pressure-card">
+            <span>06</span>
+            <h3>Global Scale</h3>
+            <p>
+              Citadel needs infrastructure patterns that expand across regions
+              without losing performance or control.
+            </p>
+            <strong>Repeatable high-performance data architectures across teams and geographies.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-panel black-panel" id="plays">
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <div>
+            <p class="eyebrow">Top 3 Sales Plays</p>
+            <h2>Win the workload where DDN can prove measurable advantage.</h2>
+          </div>
+        </div>
+
+        <div class="play-switcher" role="tablist" aria-label="Sales play selector">
+          <button class="play-tab is-active" type="button" data-play="play-1" role="tab" aria-selected="true">
+            <span>01</span> Trading Research
+          </button>
+          <button class="play-tab" type="button" data-play="play-2" role="tab" aria-selected="false">
+            <span>02</span> Governed AI Data
+          </button>
+          <button class="play-tab" type="button" data-play="play-3" role="tab" aria-selected="false">
+            <span>03</span> Hybrid HPC
+          </button>
+        </div>
+
+        <div class="play-panels">
+          <article class="play-panel is-active" id="play-1" role="tabpanel">
+            <div class="play-copy">
+              <span class="rank-pill">Rank 1 · EXAScaler</span>
+              <h3>Accelerate trading research, replay, and checkpointing.</h3>
+              <p>
+                Establish EXAScaler as the performance layer for market replay,
+                backtesting, simulation, AI training, model loading, and checkpointing.
+                This connects most directly to research velocity and trading edge.
+              </p>
+            </div>
+            <div class="proof-list">
+              <span>Proof Points</span>
+              <ul>
+                <li>Faster access to historical market datasets under concurrency.</li>
+                <li>Reduced checkpoint and restore time for AI/HPC workloads.</li>
+                <li>Low variability under load, not only peak benchmark throughput.</li>
+                <li>Strength with many files, many jobs, and research-heavy access patterns.</li>
+              </ul>
+            </div>
+            <div class="desired-outcome">
+              <span>90-Day Outcome</span>
+              <p>
+                Identify one high-value replay, simulation, or checkpointing workload;
+                capture baseline metrics; secure technical sponsor; define POC criteria.
+              </p>
+            </div>
+          </article>
+
+          <article class="play-panel" id="play-2" role="tabpanel" hidden>
+            <div class="play-copy">
+              <span class="rank-pill">Rank 2 · Infinia</span>
+              <h3>Build the governed AI data and regulatory archive layer.</h3>
+              <p>
+                Expand the current Infinia opportunity into a governed object, AI data,
+                and compliance retention architecture for market history, model artifacts,
+                research outputs, logs, simulation results, and retained records.
+              </p>
+            </div>
+            <div class="proof-list">
+              <span>Proof Points</span>
+              <ul>
+                <li>Immutable storage and policy-based retention.</li>
+                <li>Fast retrieval for retained market and trading data.</li>
+                <li>Shared AI datasets, feature-store-like workflows, and model artifacts.</li>
+                <li>Encryption, access control, policy isolation, and multi-team separation.</li>
+              </ul>
+            </div>
+            <div class="desired-outcome">
+              <span>90-Day Outcome</span>
+              <p>
+                Clarify the Infinia Q226 use case, validate buyer and owner, build
+                fit/no-fit matrix, quantify data footprint and retention requirements.
+              </p>
+            </div>
+          </article>
+
+          <article class="play-panel" id="play-3" role="tabpanel" hidden>
+            <div class="play-copy">
+              <span class="rank-pill">Rank 3 · EXAScaler + Infinia + Managed Lustre</span>
+              <h3>Shape the hybrid HPC architecture.</h3>
+              <p>
+                Help Citadel define where performance data should live across on-prem,
+                cloud, and managed cloud-adjacent environments without sacrificing
+                performance, cost control, or governance.
+              </p>
+            </div>
+            <div class="proof-list">
+              <span>Proof Points</span>
+              <ul>
+                <li>Hybrid workload map across file, object, archive, and cloud-adjacent data.</li>
+                <li>Clear view of cloud movement cost, data gravity, and latency constraints.</li>
+                <li>Managed Lustre only where a GCP-adjacent Lustre workflow is validated.</li>
+                <li>Target architecture for one hybrid AI/HPC workflow.</li>
+              </ul>
+            </div>
+            <div class="desired-outcome">
+              <span>120-Day Outcome</span>
+              <p>
+                Validate Managed Lustre relevance, identify cloud cost or data movement
+                pain, and define the right DDN product combination.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-panel" id="workloads">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <div>
+            <p class="eyebrow dark">Product Fit</p>
+            <h2>Map each workload to the offer that can earn the conversation.</h2>
+          </div>
+        </div>
+
+        <div class="fit-grid">
+          <article class="fit-card fit-very-high">
+            <span class="fit-level">Very High Fit</span>
+            <h3>Market Data Replay</h3>
+            <p>Lead with faster replay, deterministic read performance, and reduced research cycle time.</p>
+            <strong>EXAScaler</strong>
+          </article>
+          <article class="fit-card fit-very-high">
+            <span class="fit-level">Very High Fit</span>
+            <h3>Backtesting + Simulation</h3>
+            <p>Position repeatable performance and faster iteration under high concurrency.</p>
+            <strong>EXAScaler</strong>
+          </article>
+          <article class="fit-card fit-very-high">
+            <span class="fit-level">Very High Fit</span>
+            <h3>AI Training + Checkpointing</h3>
+            <p>Tie value to checkpoint duration, restore time, model loading, and accelerator productivity.</p>
+            <strong>EXAScaler</strong>
+          </article>
+          <article class="fit-card fit-high">
+            <span class="fit-level">High Fit</span>
+            <h3>Research Shared Data</h3>
+            <p>Tier active performance data and governed object data for reuse across teams.</p>
+            <strong>EXAScaler + Infinia</strong>
+          </article>
+          <article class="fit-card fit-high">
+            <span class="fit-level">High Fit</span>
+            <h3>AI Feature Stores + Artifacts</h3>
+            <p>Lead with metadata, object access, data reduction, and policy control.</p>
+            <strong>Infinia</strong>
+          </article>
+          <article class="fit-card fit-high">
+            <span class="fit-level">High Fit</span>
+            <h3>Regulatory Archive + WORM</h3>
+            <p>Position retention, audit retrieval, encryption, and compliance resilience.</p>
+            <strong>Infinia</strong>
+          </article>
+          <article class="fit-card fit-medium">
+            <span class="fit-level">Medium-High Fit</span>
+            <h3>Hybrid HPC / Cloud AI</h3>
+            <p>Validate workflow before positioning Managed Lustre or cloud-adjacent file services.</p>
+            <strong>EXAScaler / Infinia / Managed Lustre</strong>
+          </article>
+          <article class="fit-card fit-medium">
+            <span class="fit-level">Medium-High Fit</span>
+            <h3>Credit Trading Expansion</h3>
+            <p>Tie data-intensive analytics, replay, model development, and retention together.</p>
+            <strong>EXAScaler + Infinia</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-panel split-section" id="opportunities">
+        <div class="section-heading">
+          <span class="section-number">04</span>
+          <div>
+            <p class="eyebrow dark">Opportunity Architecture</p>
+            <h2>Turn the single Stage 0 signal into a multi-workload program.</h2>
+          </div>
+        </div>
+
+        <div class="opportunity-board">
+          <div class="pipeline-card">
+            <span class="card-label">Strategic Pipeline Target</span>
+            <strong>$5M-$15M</strong>
+            <p>
+              Qualified pipeline across performance file, AI data, compliance archive,
+              hybrid HPC, credit trading, and global deployment.
+            </p>
+          </div>
+          <div class="pipeline-bars" aria-label="Estimated pipeline by opportunity stream">
+            <div class="bar-row">
+              <span>Research replay / backtesting</span>
+              <div class="bar-track"><span style="width: 80%"></span></div>
+              <strong>$3M-$8M</strong>
+            </div>
+            <div class="bar-row">
+              <span>AI object / governed data</span>
+              <div class="bar-track"><span style="width: 80%"></span></div>
+              <strong>$2M-$8M</strong>
+            </div>
+            <div class="bar-row">
+              <span>AI training / checkpointing</span>
+              <div class="bar-track"><span style="width: 60%"></span></div>
+              <strong>$2M-$6M</strong>
+            </div>
+            <div class="bar-row">
+              <span>Compliance archive</span>
+              <div class="bar-track"><span style="width: 50%"></span></div>
+              <strong>$1M-$5M</strong>
+            </div>
+            <div class="bar-row">
+              <span>Hybrid HPC</span>
+              <div class="bar-track"><span style="width: 50%"></span></div>
+              <strong>$1M-$5M</strong>
+            </div>
+            <div class="bar-row">
+              <span>Global deployment</span>
+              <div class="bar-track"><span style="width: 100%"></span></div>
+              <strong>$3M-$10M</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-panel audience-panel" id="messaging">
+        <div class="section-heading">
+          <span class="section-number">05</span>
+          <div>
+            <p class="eyebrow dark">Messaging By Audience</p>
+            <h2>Anchor every conversation to the work Citadel cares about.</h2>
+          </div>
+        </div>
+
+        <div class="audience-tabs" role="tablist" aria-label="Audience messaging">
+          <button class="audience-tab is-active" type="button" data-audience="exec" role="tab" aria-selected="true">Executive</button>
+          <button class="audience-tab" type="button" data-audience="research" role="tab" aria-selected="false">Research / AI</button>
+          <button class="audience-tab" type="button" data-audience="infra" role="tab" aria-selected="false">Infrastructure</button>
+          <button class="audience-tab" type="button" data-audience="compliance" role="tab" aria-selected="false">Compliance</button>
+        </div>
+
+        <div class="audience-content">
+          <article class="audience-card is-active" id="audience-exec">
+            <span class="card-label">CTO · Senior Technology · Business · Finance</span>
+            <h3>Trading advantage, AI productivity, operational resilience, cost discipline.</h3>
+            <p>
+              "This is not a storage refresh. This is about the data layer behind
+              Citadel's research velocity, AI productivity, and regulatory confidence."
+            </p>
+            <ul>
+              <li>Preserve trading edge through faster research, replay, and simulation.</li>
+              <li>Keep GPUs, TPUs, and research infrastructure productive.</li>
+              <li>Reduce unnecessary cloud movement, duplicated data, and compute waste.</li>
+            </ul>
+          </article>
+          <article class="audience-card" id="audience-research" hidden>
+            <span class="card-label">Research Platform · AI/HPC · Cloud/Data/AI</span>
+            <h3>Research velocity, model iteration, reproducibility, hybrid architecture.</h3>
+            <p>
+              "We want to evaluate the parts of the research workflow where data access
+              is slowing the cycle from market data to tested strategy."
+            </p>
+            <ul>
+              <li>Reduce time required to replay, simulate, train, and validate.</li>
+              <li>Improve confidence in repeated experiments and benchmark results.</li>
+              <li>Reduce checkpoint, restore, data loading, and model movement delay.</li>
+            </ul>
+          </article>
+          <article class="audience-card" id="audience-infra" hidden>
+            <span class="card-label">Global Infrastructure · Storage · Platform Engineering</span>
+            <h3>Architecture fit, performance, reliability, integration, operations.</h3>
+            <p>
+              "The right starting point is workload mapping: deterministic file
+              performance, governed object access, retention, and cloud adjacency."
+            </p>
+            <ul>
+              <li>Test EXAScaler where high concurrency and low variability matter.</li>
+              <li>Validate Infinia where object-scale governance and retention matter.</li>
+              <li>Integrate with deployment, automation, monitoring, security, and support.</li>
+            </ul>
+          </article>
+          <article class="audience-card" id="audience-compliance" hidden>
+            <span class="card-label">Compliance · Regulatory Analytics · Legal Technology</span>
+            <h3>Retention, retrieval, auditability, transparency, risk reduction.</h3>
+            <p>
+              "Compliance storage is not only about keeping data. It is about being
+              able to prove control, retrieve quickly, and support regulatory confidence."
+            </p>
+            <ul>
+              <li>Support WORM, policy-based retention, and controlled access.</li>
+              <li>Accelerate audit response for retained market and trading data.</li>
+              <li>Reduce fragmented archive risk with governed object-scale access.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-panel" id="stakeholders">
+        <div class="section-heading">
+          <span class="section-number">06</span>
+          <div>
+            <p class="eyebrow dark">Stakeholder Map</p>
+            <h2>Build coverage across executive, research, cloud, storage, and regulatory influence.</h2>
+          </div>
+        </div>
+
+        <div class="stakeholder-grid">
+          <article class="stakeholder-card primary">
+            <span>Executive Sponsor</span>
+            <h3>Josh Woods</h3>
+            <p>CTO</p>
+            <strong>Data layer must not slow research, AI, or regulatory readiness.</strong>
+          </article>
+          <article class="stakeholder-card primary">
+            <span>Technical Champion</span>
+            <h3>Costas Bekas</h3>
+            <p>Head of Research Platform</p>
+            <strong>EXAScaler for replay, simulation, checkpointing, and model iteration.</strong>
+          </article>
+          <article class="stakeholder-card">
+            <span>Platform Decision-Maker</span>
+            <h3>Aditya Telidevara</h3>
+            <p>Head of Cloud, Data & AI</p>
+            <strong>Governed hybrid architecture across performance and object tiers.</strong>
+          </article>
+          <article class="stakeholder-card">
+            <span>Infrastructure Sponsor</span>
+            <h3>Simon Whitear</h3>
+            <p>Global Head of Infrastructure</p>
+            <strong>Repeatable high-performance infrastructure patterns.</strong>
+          </article>
+          <article class="stakeholder-card primary">
+            <span>Direct Storage Buyer</span>
+            <h3>Sundar Swaminathan</h3>
+            <p>Head of Storage</p>
+            <strong>Evaluate DDN by workload, not as a generic storage platform.</strong>
+          </article>
+          <article class="stakeholder-card">
+            <span>Regulatory Influencer</span>
+            <h3>Gregg Berman</h3>
+            <p>Market Analytics / Regulatory Structure</p>
+            <strong>Governed retention and faster audit-ready access.</strong>
+          </article>
+          <article class="stakeholder-card">
+            <span>Domain Buyer</span>
+            <h3>Michael Juma</h3>
+            <p>Head of Credit Technology</p>
+            <strong>Data-intensive replay, analytics, and compliant retention.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-panel" id="roadmap">
+        <div class="section-heading">
+          <span class="section-number">07</span>
+          <div>
+            <p class="eyebrow dark">Engagement Roadmap</p>
+            <h2>Move from account truth to technical validation to expansion.</h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span>Jun-Jul 2026</span>
+            <h3>Phase 1: Account Truth</h3>
+            <p>Validate opportunity, buyer, workload, vendor footprint, and next step.</p>
+            <strong>Clear account map and qualified use case.</strong>
+          </article>
+          <article class="timeline-item">
+            <span>Aug-Sep 2026</span>
+            <h3>Phase 2: Workload Discovery</h3>
+            <p>Map replay, checkpoint, AI data, compliance, and hybrid HPC workflows.</p>
+            <strong>Quantified pain and POC candidate.</strong>
+          </article>
+          <article class="timeline-item">
+            <span>Oct-Dec 2026</span>
+            <h3>Phase 3: Technical Validation</h3>
+            <p>Run benchmark, workshop, or architecture validation.</p>
+            <strong>Technical sponsor and Stage 2/3 opportunity.</strong>
+          </article>
+          <article class="timeline-item">
+            <span>Jan-Mar 2027</span>
+            <h3>Phase 4: Commercial Proposal</h3>
+            <p>Present phased deployment and business case.</p>
+            <strong>$3M-$8M initial close target.</strong>
+          </article>
+          <article class="timeline-item">
+            <span>Apr-Jun 2027</span>
+            <h3>Phase 5: Expansion Plan</h3>
+            <p>Expand to compliance, credit, hybrid HPC, or global deployment.</p>
+            <strong>$5M-$15M strategic pipeline.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-panel risk-panel" id="risks">
+        <div class="section-heading">
+          <span class="section-number">08</span>
+          <div>
+            <p class="eyebrow dark">Risks + Mitigation</p>
+            <h2>Keep the motion sharp, specific, and measurable.</h2>
+          </div>
+        </div>
+
+        <div class="risk-grid">
+          <article>
+            <span class="risk-level high">High Impact</span>
+            <h3>DDN sounds like generic storage.</h3>
+            <p>Anchor every conversation to research velocity, trading edge, AI productivity, or governance.</p>
+          </article>
+          <article>
+            <span class="risk-level high">High Impact</span>
+            <h3>No confirmed champion.</h3>
+            <p>Prioritize stakeholder validation in the first 30 days.</p>
+          </article>
+          <article>
+            <span class="risk-level high">High Likelihood</span>
+            <h3>Citadel prefers internal build.</h3>
+            <p>Position DDN as an accelerator of internal engineering, not a replacement.</p>
+          </article>
+          <article>
+            <span class="risk-level high">High Likelihood</span>
+            <h3>Incumbents are entrenched.</h3>
+            <p>Compete by workload proof, measurable outcomes, and quantified benchmarks.</p>
+          </article>
+          <article>
+            <span class="risk-level medium">Medium Risk</span>
+            <h3>Managed Lustre is forced.</h3>
+            <p>Only position it when GCP-adjacent or managed Lustre workflows are validated.</p>
+          </article>
+          <article>
+            <span class="risk-level medium">Medium Risk</span>
+            <h3>ROI model lacks credibility.</h3>
+            <p>Use Citadel-specific metrics: runtime, checkpoint time, compute efficiency, cloud cost, audit retrieval.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-panel kpi-panel" id="kpis">
+        <div class="section-heading">
+          <span class="section-number">09</span>
+          <div>
+            <p class="eyebrow dark">Success Criteria</p>
+            <h2>Measure relationship quality, workload proof, and commercial movement.</h2>
+          </div>
+        </div>
+
+        <div class="kpi-grid">
+          <article>
+            <span>Relationship</span>
+            <strong>Named technical sponsor</strong>
+            <p>Research Platform, Storage, Cloud/Data/AI, or Infrastructure.</p>
+          </article>
+          <article>
+            <span>Opportunity</span>
+            <strong>Stage 0 to Stage 2+</strong>
+            <p>Infinia Q226 advances within 90 days.</p>
+          </article>
+          <article>
+            <span>Technical</span>
+            <strong>One validated workload</strong>
+            <p>Replay, checkpoint, AI data, or compliance workload.</p>
+          </article>
+          <article>
+            <span>Pipeline</span>
+            <strong>$5M-$15M qualified</strong>
+            <p>Strategic program across multiple workload streams.</p>
+          </article>
+          <article>
+            <span>Commercial</span>
+            <strong>$3M-$8M initial close</strong>
+            <p>Phased deployment and business case.</p>
+          </article>
+          <article>
+            <span>Competitive</span>
+            <strong>Incumbent map complete</strong>
+            <p>Vendor by workload, site, data type, and team.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-panel next-panel" id="next-steps">
+        <div class="section-heading">
+          <span class="section-number">10</span>
+          <div>
+            <p class="eyebrow">Immediate Next Steps</p>
+            <h2>Convert assumptions into account truth.</h2>
+          </div>
+        </div>
+
+        <div class="action-board">
+          <article>
+            <span>AE · High</span>
+            <h3>Validate Infinia Q226 opportunity.</h3>
+            <p>Confirm real use case, buyer, scope, commercial path, and next step.</p>
+          </article>
+          <article>
+            <span>AE / SE · High</span>
+            <h3>Secure storage leadership discovery.</h3>
+            <p>Understand architecture, pain, incumbent vendors, and technical priorities.</p>
+          </article>
+          <article>
+            <span>Sales Leadership · High</span>
+            <h3>Build Research Platform engagement path.</h3>
+            <p>Align DDN to replay, simulation, AI training, and checkpointing.</p>
+          </article>
+          <article>
+            <span>SE · High</span>
+            <h3>Create Citadel workload discovery guide.</h3>
+            <p>Structure discovery around outcomes and metrics, not product features.</p>
+          </article>
+          <article>
+            <span>AE / SE / RevOps · Medium-High</span>
+            <h3>Build initial ROI model.</h3>
+            <p>Quantify runtime, compute efficiency, data duplication, cloud cost, and retention value.</p>
+          </article>
+          <article>
+            <span>Account Team · High</span>
+            <h3>Map vendor footprint.</h3>
+            <p>Define competitive strategy by workload, site, data type, and team.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-panel gaps-panel" id="gaps">
+        <div class="section-heading">
+          <span class="section-number">+</span>
+          <div>
+            <p class="eyebrow dark">Data Gaps To Close</p>
+            <h2>Discovery should make these unknowns smaller every week.</h2>
+          </div>
+        </div>
+
+        <div class="gaps-list">
+          <span>Critical</span>
+          <p>Current Infinia scope · replay and simulation bottlenecks · GPU/TPU estate · hot and retained data footprint · incumbent storage by workload.</p>
+          <span>High</span>
+          <p>Cloud / GCP usage model · compliance archive requirements · budget and procurement path · executive sponsor.</p>
+          <span>Medium-High</span>
+          <p>Historical DDN relationship, prior evaluations, current deployments, competitive losses, and open technical issues.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img class="footer-logo" src="assets/ddn-logo-small.svg" alt="DDN" />
+        <p>Citadel Securities strategic account plan · June 1, 2026 - June 1, 2027</p>
+      </div>
+      <p>
+        Message to Citadel: DDN helps make high-value data workflows faster, more
+        predictable, and easier to govern.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
