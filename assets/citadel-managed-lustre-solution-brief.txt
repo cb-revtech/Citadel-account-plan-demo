@@ -1,0 +1,59 @@
+High-Performance File Access for Citadel's AI and HPC Workloads in Google Cloud
+
+Evaluating Google Cloud Managed Lustre powered by DDN for cloud research acceleration, checkpointing, simulation, and hybrid AI/HPC workload placement.
+
+Page 1: Executive and Business Context
+
+Citadel Securities' advantage is built on the ability to turn data into insight, models, and trading strategy faster and more reliably than the market. As AI, simulation, replay, and research workflows become more compute-intensive, the active data layer becomes an important part of infrastructure performance.
+
+For selected GCP-based workloads, the challenge is not simply where to store data. The challenge is how to provide high-performance shared file access close to cloud compute without adding unnecessary Lustre operations burden. Object storage may remain the durable tier, and on-prem performance systems may remain the right fit for many workloads. But some AI/HPC workflows require a cloud-native performance file system for active execution.
+
+Google Cloud Managed Lustre powered by DDN gives Citadel a managed option to evaluate for those workloads. The recommended path is not a broad migration. It is a focused workload fit assessment: identify one candidate workload, establish baseline metrics, validate architecture fit, and decide based on proof.
+
+Recommended Solution
+
+Google Cloud Managed Lustre powered by DDN should be evaluated as a managed high-performance file system for Citadel workloads that meet three conditions:
+
+1. The workload runs in GCP or is a serious candidate for GCP.
+2. The workload requires high-performance shared file access.
+3. The workload has measurable checkpointing, training, simulation, replay, or research throughput criteria.
+
+Primary Use Cases
+
+- AI training checkpointing: managed shared file access for checkpoint-heavy workloads in GCP.
+- Distributed AI training: high-performance parallel access close to GCP compute.
+- GKE-based AI workflows: integration with GKE through Managed Lustre CSI workflows.
+- Cloud HPC and simulation: a managed parallel file system option for HPC-style workloads.
+- Burst research environments: a managed GCP performance tier without operating Lustre directly.
+
+Page 2: Technical Fit, Validation Plan, and Next Step
+
+Managed Lustre may sit as an active performance file system for selected GCP workloads requiring shared file access. It may sit alongside GCP compute resources, Google Kubernetes Engine, Cloud Storage, existing on-prem performance systems, and Citadel's internal monitoring, access control, security, and automation frameworks.
+
+Workload Fit Checklist
+
+- Runs in GCP or is being evaluated for GCP.
+- Requires shared POSIX-style file access.
+- Has checkpoint-heavy AI training or restart requirements.
+- Uses distributed training or multi-node compute.
+- Runs simulation, replay, modeling, or HPC-style workflows.
+- Uses GKE or cloud-native orchestration patterns.
+- Experiences data-loader, file access, or metadata bottlenecks.
+- Needs a managed option instead of self-managed Lustre.
+- Has measurable baseline performance metrics.
+- Has a named technical owner and defined success criteria.
+
+Do not prioritize Managed Lustre when the workload is primarily object archive, compliance retention, generic storage cost reduction, or an on-prem workload with no GCP execution path.
+
+Proof Plan
+
+1. Workload selection: choose one GCP-based or GCP-candidate workload tied to AI training, checkpointing, simulation, replay, or research burst.
+2. Current-state baseline: capture runtime, checkpoint duration, restore time, data throughput, metadata behavior, concurrency, compute wait time, and operational effort.
+3. Success criteria: define what improvement or operational simplification would justify further evaluation.
+4. Technical validation: review architecture, security, network, GKE/Compute Engine fit, Cloud Storage movement, monitoring, and support model.
+5. Business case: translate findings into research productivity, compute productivity, operational simplification, or cloud placement discipline.
+6. Next-step recommendation: proceed to a deeper POC, architecture workshop, no-fit decision, or alternate DDN architecture discussion.
+
+Recommended Next Step
+
+Run a focused Google + DDN AI/HPC workload fit assessment with Citadel's Cloud/Data/AI, Research Platform, Infrastructure, and Storage stakeholders. The goal is to identify whether one specific GCP-based AI, HPC, checkpointing, simulation, or cloud research workload is a fit for Managed Lustre, and to define a proof plan only if the fit is credible.
