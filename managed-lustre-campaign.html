@@ -14,19 +14,19 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260610-contrast" />
   </head>
   <body class="campaign-body campaign-deck-body">
     <header class="site-header" aria-label="Campaign presentation">
-      <a class="brand-lockup" href="index.html#top" aria-label="Back to DDN Citadel account plan">
+      <a class="brand-lockup" href="index.html#top" aria-label="Back to DDN Citadel account plan" data-transition-label="Returning to strategic account plan" onclick="event.preventDefault(); return window.ddnPageTransition ? window.ddnPageTransition(event, this) : (window.location.href = this.href, false)">
         <span class="logo-plate">
           <img class="brand-logo" src="assets/ddn-logo-small.svg" alt="DDN" />
         </span>
         <span class="brand-kicker">ABM Campaign Deck</span>
       </a>
-      <a class="header-action" href="index.html#roadmap" data-transition-label="Returning to strategic account plan">Account Plan</a>
+      <a class="header-action" href="index.html#roadmap" data-transition-label="Returning to strategic account plan" onclick="event.preventDefault(); return window.ddnPageTransition ? window.ddnPageTransition(event, this) : (window.location.href = this.href, false)">Account Plan</a>
       <nav class="top-nav" aria-label="Campaign execution package sections">
-        <a class="nav-cta" href="index.html#top" data-transition-label="Returning to strategic account plan">Account Plan</a>
+        <a class="nav-cta" href="index.html#top" data-transition-label="Returning to strategic account plan" onclick="event.preventDefault(); return window.ddnPageTransition ? window.ddnPageTransition(event, this) : (window.location.href = this.href, false)">Account Plan</a>
         <a href="#campaign-summary">Summary</a>
         <a href="#positioning">Positioning</a>
         <a href="#landing-page-asset">Landing Page</a>
@@ -870,7 +870,7 @@
         <div class="bridge-card">
           <span>Account Plan</span>
           <strong>Citadel Securities strategic account plan and sales plays</strong>
-          <a class="cta-button primary" href="index.html#top" data-transition-label="Returning to strategic account plan">
+          <a class="cta-button primary" href="index.html#top" data-transition-label="Returning to strategic account plan" onclick="event.preventDefault(); return window.ddnPageTransition ? window.ddnPageTransition(event, this) : (window.location.href = this.href, false)">
             Open account plan
           </a>
         </div>
@@ -1013,6 +1013,6 @@
       </p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260610-premium4"></script>
   </body>
 </html>

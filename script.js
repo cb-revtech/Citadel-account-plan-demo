@@ -42,13 +42,13 @@ function shouldTransitionLink(link) {
   return currentPath !== nextPath;
 }
 
-document.addEventListener("click", (event) => {
-  if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-
-  const link = event.target.closest("a[href]");
+function runPageTransition(event, link, force = false) {
+  if ((!force && event.defaultPrevented) || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (document.body.classList.contains("is-transitioning")) return;
   if (!shouldTransitionLink(link)) return;
 
   event.preventDefault();
+  event.stopPropagation();
   if (transitionMessage) {
     transitionMessage.textContent = link.dataset.transitionLabel || "Opening next view";
   }
@@ -58,6 +58,25 @@ document.addEventListener("click", (event) => {
   window.setTimeout(() => {
     window.location.href = link.href;
   }, reduceMotion ? 0 : 360);
+
+  return false;
+}
+
+window.ddnPageTransition = (event, link) => {
+  if (!shouldTransitionLink(link)) return true;
+  runPageTransition(event, link, true);
+  return false;
+};
+
+document.addEventListener("click", (event) => {
+  const clickedElement = event.target instanceof Element ? event.target : event.target.parentElement;
+  runPageTransition(event, clickedElement?.closest("a[href]"));
+}, true);
+
+document.querySelectorAll("a[href]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    runPageTransition(event, link);
+  }, true);
 });
 
 window.addEventListener("pageshow", () => {

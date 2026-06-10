@@ -1805,8 +1805,18 @@ section[id] {
   min-height: 280px;
 }
 
+.talk-track-grid article.dark-card {
+  color: #ffffff;
+  background: var(--ddn-black);
+  border-color: var(--ddn-black);
+}
+
+.talk-track-grid article.dark-card .card-label {
+  color: var(--ddn-red);
+}
+
 .talk-track-grid .dark-card p {
-  color: rgba(255, 255, 255, 0.76);
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .do-dont-grid {

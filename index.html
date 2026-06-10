@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260610-contrast" />
   </head>
   <body class="account-body">
     <header class="site-header" aria-label="Primary">
@@ -24,9 +24,9 @@
         </span>
         <span class="brand-kicker">Citadel Plan</span>
       </a>
-      <a class="header-action" href="managed-lustre-campaign.html" data-transition-label="Opening Managed Lustre campaign deck">Managed Lustre Campaign</a>
+      <a class="header-action" href="managed-lustre-campaign.html" data-transition-label="Opening Managed Lustre campaign deck" onclick="event.preventDefault(); return window.ddnPageTransition ? window.ddnPageTransition(event, this) : (window.location.href = this.href, false)">Managed Lustre Campaign</a>
       <nav class="top-nav" aria-label="Account plan sections">
-        <a class="nav-cta" href="managed-lustre-campaign.html" data-transition-label="Opening Managed Lustre campaign deck">Campaign</a>
+        <a class="nav-cta" href="managed-lustre-campaign.html" data-transition-label="Opening Managed Lustre campaign deck" onclick="event.preventDefault(); return window.ddnPageTransition ? window.ddnPageTransition(event, this) : (window.location.href = this.href, false)">Campaign</a>
         <a href="#thesis">Summary</a>
         <a href="#plays">Sales Plays</a>
         <a href="#workloads">Workloads</a>
@@ -734,7 +734,7 @@
         <div class="bridge-card">
           <span>Campaign Deck</span>
           <strong>Citadel Securities + Google Cloud Managed Lustre powered by DDN</strong>
-          <a class="cta-button primary" href="managed-lustre-campaign.html" data-transition-label="Opening Managed Lustre campaign deck">
+          <a class="cta-button primary" href="managed-lustre-campaign.html" data-transition-label="Opening Managed Lustre campaign deck" onclick="event.preventDefault(); return window.ddnPageTransition ? window.ddnPageTransition(event, this) : (window.location.href = this.href, false)">
             Open campaign execution
           </a>
         </div>
@@ -752,6 +752,6 @@
       </p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260610-premium4"></script>
   </body>
 </html>
